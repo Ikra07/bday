@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        #spinner{
+            height: 30px;
+            width: 30px;
+            border: 7px solid;
+            border-radius: 50%;
+            border-color: red black black;
+            animation: rotate 1.5s linear infinite;
+        }
+        @keyframes rotate {
+            to {transform: rotate(360deg);}
+        }
+        .container{
+            background-color: rgb(2, 56, 38);
+            height: 200px;
+            width: 200px;
+            margin-top: 30px;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 50px;
+            width: 50px;
+            animation-name: muskan;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: cubic-bezier(0.075, 0.282, 0.65, 1);
+        }
+        @keyframes muskan {
+            from
+            {
+                background-color: yellow;
+            }
+            to {transform: translate(100px);}
+            
+        }
+        .rec{
+            height: 20px;
+            width: 20px;
+            border: 8px solid;
+            margin-top: 20px;
+            border-color:rgb(2, 75, 51) aquamarine;
+            animation-duration: 4s;
+            animation: 2s rotate infinite;
+            animation-delay: 1s;
+        }
+        @keyframes rectangular {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .new{
+            background-color: black;
+            height: 100px;
+            width: 200px;
+            margin-top: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .letter{
+            animation: 5s  load linear infinite ;
+            /* animation-play-state:; */
+            animation-direction: reverse;
+        }
+        @keyframes load {
+            to {
+                transform: translatex(10px);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="spinner"></div>
+   <div class="container">
+    <div class="box">box</div>
+   </div>
+    <div class="rec">
+
+    </div>
+    <div class="new">
+    <span class="letter l">L</span>
+    <span class="letter o">O</span>
+    <span class="letter A">A</span>
+    <span class="letter D">D</span>
+    <span class="letter I">I</span>
+    <span class="letter N">N</span>
+    <span class="letter G">G</span>
+    <div id="spinner"></div>
+</div>
+</body>
+</html>

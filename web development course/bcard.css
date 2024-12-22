@@ -1,0 +1,64 @@
+.card {
+
+    height: 750px;
+    width: 500px;
+    background-color: black;
+    border: 6px solid rgb(248, 171, 93);
+    border-radius: 10px;
+    
+}
+
+h1 {
+    color: rgb(176, 109, 9);
+    left: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+
+    animation: slideIn 3s linear alternate;
+    text-shadow: 2px 2px 5px;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes slideIn {
+    0% {
+        top: -50%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 10px;
+        opacity: 1;
+    }
+}
+
+
+img {
+    height: 550px;
+    width: 450px;
+    margin-left: 30px;
+    opacity: 0.50;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: 2px solid rgb(247, 183, 100);
+
+}
+button{
+    margin-top: 9px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: burlywood;
+    border: 2px dotted black;
+}
+.bt {
+    margin-left: 20px;
+    margin-top: 9px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: burlywood;
+    border: 2px dotted black;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+        :root{
+            --Color:rgb(236, 132, 245);
+            --seccolor:rgb(247, 174, 231);
+            /*this is used when we have to change the same color/and other properties padding etc in our website at lots of place ,then just put the variable name in that style tag like put (--color)where u want pink color whether its one place or more*/
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .list{
+            background-color:var(--Color);
+            border: 1px solid black;
+        }
+        ul{
+            display: flex;
+            
+        }
+        ul li{
+            padding: 34px;
+            list-style: none;
+            /*list style is used to remove the dotes like 1 2 3 etc,*/
+            border: 12px solid var(--seccolor);
+        }
+        .para{
+            background-color: var(--seccolor);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="list">
+        <ul>
+            <li>HOME</li>
+            <li>NAME</li>
+            <li>CONTACT</li>
+        </ul>
+    </div>
+    <div class="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, magni nesciunt omnis dicta earum laboriosam recusandae rem culpa modi esse, optio incidunt, ut veritatis pariatur mollitia aspernatur debitis consequuntur ab voluptates. Commodi, beatae a?
+    </div>
+   
+</body>
+</html>

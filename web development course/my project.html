@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my project</title>
+    <style>
+        :root {
+            --color: rgb(150, 150, 247);
+            --seccolor: rgb(241, 35, 100);
+            --tercolor: rgb(126, 70, 70);
+        }
+
+        body {
+            background-color: var(--tercolor)
+        }
+
+        @media only screen and 
+            (max-width: 455px){
+
+        
+        body{
+            background-color: var(--seccolor);
+        }
+        .images{
+            flex-direction: column;
+        }
+    }
+
+        .card {
+             background-color: rgb(216, 131, 159);
+            /*background-color: var(--color);*/
+            height: 1550px;
+            width: 1500px;
+            border: 3px solid black;
+        }
+
+        .images {
+            padding: 15px;
+            margin: 0px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        ul li {
+            list-style: none;
+            padding: 15px;
+            border: 2px solid pink;
+
+
+        }
+        ul li:hover{
+            background-color: var(--tercolor);
+            border-radius: 10px;
+        }
+
+        .list {
+             background-color: palevioletred;
+            /*background-color: var(--seccolor);*/
+        }
+
+        .cap {
+            text-align: center;
+        }
+
+        .cap button {
+            background-color: rgb(171, 120, 152);
+            color: bisque;
+            border: 1px solid;
+            border-radius: 15px;
+            padding: 10px 10px 10px 10px;
+            margin: 40px;
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+
+            border: 2px solid black;
+            padding: 15px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="list">
+        <ul>
+            <li>HOME</li>
+            <li>NAME</li>
+            <li>PLACE</li>
+            <li>CONTACT</li>
+            <li>DETAILS</li>
+
+        </ul>
+
+    </div>
+    <div class="card">
+        <div class="images">
+
+            <img height="300px" src="pink.jpeg">
+            <img height="300px" src="pink2.jpeg">
+            <img height="300px" src="pink 3.jpeg">
+            <img width="300vw" height="300px" src="pink4.jpeg">
+            <img src="pink5.jpeg">
+            <img height="300px" src="pink6.jpeg">
+            <img height="300px" width="240vw" src="pink7.jpeg">
+
+        </div>
+        <div class="cap">
+            <button>
+                PINK WORLD
+            </button>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

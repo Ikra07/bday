@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+/* class selector*/
+        .back
+        { background-color: rgb(185, 95, 125);}
+    .M
+    {
+        color: blueviolet;
+        background-color: bisque;
+    }
+/* id selector*/
+    #k
+    {
+        background-color: rgb(142, 103, 103);
+    }
+/* child selector=direct child of div will get these properties*/
+    div p {
+        color: blue;
+        background-color: coral;
+    }
+    /*universal selector apply property to all*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* pseudo selector */
+    a:visited{
+        color: chartreuse;
+    }
+    a:hover{
+        background-color: rgb(240, 71, 161);
+    }
+    ::selection{
+        background-color: aqua;
+        color: black;
+    }
+    p::first-letter{
+        color: red;
+        font-style: italic;
+        font-size: larger;
+    }
+    input::placeholder{
+        color:blue;
+        
+    }
+    </style>
+    <div class="back">
+        My name is Muskan
+        <p>
+            This is code with harry classes
+        </p>
+        <span>
+            This is code with harry classes
+        </span>
+    </div>
+    <div class="M">HERE IS MY CLASS</div>
+    <div id="k">
+        Here is id div
+    </div>
+    <a href="https://www.google.com">go to Google</a> 
+    
+    <div>
+        <input type="text" placeholder="type your name">
+    </div>
+    
+</body>
+</html>

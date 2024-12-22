@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object fit and object cover</title>
+    <style>
+        :root{
+            background-image: url(https://www.theaccountant-online.com/wp-content/uploads/sites/10/2021/07/Code.jpg);
+            background-repeat: no-repeat;
+        }
+        .container {
+            height: 800px;
+            width: 800px;
+            background-color: bisque;
+            border: 2px solid black;
+
+        }
+
+        img {
+            height: 800px;
+            width: 800px;
+
+            object-fit: contain;
+
+        }
+
+        .container2 img {
+            height: 800px;
+            width: 800px;
+            object-fit: cover;
+            /* MAIN PROPERTY */
+            object-position: top left;
+            /* OBJECT POSITION CAN ALSO BE DONE BY GIVING MARGIN FROM EVERY SIDE EX: 10PX 20PX 30PX 25PX */
+
+        }
+
+        .container2 {
+            height: 800px;
+            width: 800px;
+            background-color: rgb(232, 142, 31);
+            border: 2px solid black;
+        }
+        .background{
+           height: 566px;
+           width: 588px;
+           background-position: center center;
+            background-image: url(https://th.bing.com/th/id/OIP.voVmH_P-WhYnjVZYb-WUhwAAAA?rs=1&pid=ImgDetMain);
+            border: 2px solid black;
+        }
+        .background2{
+           height: 566px;
+           width: 588px;
+           background-position: 50%;
+            background-image: url(https://photutorial.com/wp-content/uploads/2023/04/Featured-image-AI-image-generators-by-Midjourney.png);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img
+            src="https://photutorial.com/wp-content/uploads/2023/04/Featured-image-AI-image-generators-by-Midjourney.png">
+        <div class="container2">
+            <img class="2"
+                src="https://photutorial.com/wp-content/uploads/2023/04/Featured-image-AI-image-generators-by-Midjourney.png">
+        </div>
+        <div class="background">
+
+        </div>
+        <div class="background2">
+
+        </div>
+    </div>
+    
+</body>
+
+</html>

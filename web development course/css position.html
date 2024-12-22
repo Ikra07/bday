@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 150px;
+            width: 70vw;
+            margin:3px;
+            padding: 3px;
+            border: 2px solid black;
+        }
+        .box1{
+            background-color: rgb(36, 30, 22);
+            position: sticky;
+            top: 0px;
+            margin: 0px;
+            padding: 0px;
+            height: 111px;
+            width: 100vw;
+            border: 5px dotted red;
+        }
+        .box2{
+            background-color: rgb(231, 179, 100);
+            top: 34px;
+            left: 54px;
+            position: relative;
+            /*IF WE HAVE TO CHANGE THE POSITION OF ANY SHAPE WE HAVE TO CHANGE IT FROM STATIC TO ANOTHER*/
+        }
+        .box3{
+            background-color: aquamarine;
+            position: fixed;
+            bottom: 0px;
+            left: 25vw;
+
+        }
+        .box4{
+            background-color:aqua;
+        }
+        .box5{
+            background-color: rgb(235, 131, 209);
+        }
+        .box6{
+            background-color: rgb(139, 177, 124);
+        }
+        .box7{
+            background-color: rgb(76, 59, 39);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <div class="box box7"></div>
+</body>
+</html>
